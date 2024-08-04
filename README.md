@@ -2,7 +2,7 @@
 
 ## Description
 
-This Modal component allows you to display a simple and customizable modal window in React.
+This Modal component enables the display a simple and customizable modal window in React.
 
 ![Modal Example Screenshot](screenshot/modal-example.png)
 
@@ -30,7 +30,8 @@ Here is an example of how to use the Modal component:
 
 ```jsx
 import React, { useState } from 'react';
-import Modal from 'react-modal-stelda'; 
+import Modal from 'react-modal-stelda';
+import './App.css'; // Import the CSS file
 
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,6 +46,9 @@ function App() {
                 isOpen={isModalOpen}
                 onClose={closeModal}
                 message="This is a message."
+                overlayClassName="custom-overlay"
+                contentClassName="custom-content"
+                closeButtonClassName="custom-close-button"
             />
         </div>
     );
@@ -60,6 +64,9 @@ The Modal component accepts the following props:
 - `isOpen` (boolean): Whether the modal is open or not.
 - `onClose` (function): Function to call when the modal is closed.
 - `message` (string): The message to display in the modal.
+- `overlayClassName` (string): The CSS class for the overlay.
+- `contentClassName` (string): The CSS class for the modal content.
+- `closeButtonClassName` (string): The CSS class for the close button.
 
 ## Styles
 

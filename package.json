@@ -1,6 +1,6 @@
 {
   "name": "react-modal-stelda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and customizable React modal component",
   "main": "dist/index.js",
   "scripts": {
