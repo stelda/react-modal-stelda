@@ -30,8 +30,7 @@ Here is an example of how to use the Modal component:
 
 ```jsx
 import React, { useState } from 'react';
-import Modal from 'react-modal-stelda';
-import 'react-modal-stelda/dist/modal.css'; // Make sure to import the associated CSS
+import Modal from 'react-modal-stelda'; 
 
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,7 +44,7 @@ function App() {
             <Modal
                 isOpen={isModalOpen}
                 onClose={closeModal}
-                message="This is a modal message."
+                message="This is a message."
             />
         </div>
     );
